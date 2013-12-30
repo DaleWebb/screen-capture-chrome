@@ -1,0 +1,44 @@
+<html>
+<head>
+<link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-glyphicons.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+    <header>
+    <div class="btn-group btn-group-justified navbar-fixed-top">
+      <a id="record" class="btn btn-default" data-loading-text="Recording..."><span class="glyphicon glyphicon-record"></span> Record</a>
+      <a id="pause" class="btn btn-default" data-loading-text="Paused"><span class="glyphicon glyphicon-pause"></span> Pause</a>
+      <a id="stop" class="btn btn-default" data-loading-text="Stopped"><span class="glyphicon glyphicon-stop"></span> Stop</a>
+    </div>
+    </header>
+    <div class="container-fluid" style="padding-top:50px;">
+<div class="form-group">
+  <div class="checkbox">
+  <label>
+    <input id="camera" type="checkbox" value="true"> Camera
+  </label> 
+</div>
+<div class="checkbox">
+  <label>
+    <input id="audio" type="checkbox" value="true" disabled> Audio
+  </label>
+</div>
+</div>
+    </div>
+    <div class="btn-group btn-group-justified navbar-fixed-bottom">
+      <a id="watch" class="btn btn-default" data-loading-text="Watch"><span class="glyphicon glyphicon-play"></span> Watch</a>
+      <a id="save" class="btn btn-default" data-loading-text="Save"><span class="glyphicon glyphicon-save"></span> Save</a>
+      <a id="delete" class="btn btn-default" data-loading-text="Delete"><span class="glyphicon glyphicon-trash"></span> Delete</a>
+    </div>
+  </body>
+
+</html>
+  <canvas id="canvas"></canvas>
+<script src="../js/recordRTC.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>
